@@ -1,4 +1,5 @@
 export interface SkillsProps {
+    id: number,
     icon: string,
-    skill: string
+    name: string
 }
