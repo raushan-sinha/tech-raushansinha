@@ -7,38 +7,35 @@ export default function SkillSection() {
             {/* Section Heading */}
             <div className="flex w-full max-w-5xl flex-col gap-2">
                 <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl">
-                    Skills<span className="text-blue-500">.</span>
+                    Skills
                 </h2>
-
-                <p className="max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base sm:leading-7 dark:text-slate-400">
-                    Technologies and tools I use to build modern, scalable web
-                    applications.
-                </p>
             </div>
 
             {/* Skills Grid */}
-            <div className="grid w-full max-w-5xl grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 lg:grid-cols-5">
+
+            <div className="grid w-full max-w-5xl grid-cols-2 gap-2 px-1 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 md:gap-3 lg:grid-cols-5">
 
                 {SkillsData.map((skill) => (
                     <div
                         key={skill.id}
-                        className="group flex min-w-0 items-center gap-3 rounded-xl border border-slate-200 bg-white p-3.5 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md sm:gap-3.5 sm:p-4 dark:border-slate-800 dark:bg-slate-900"
+                        className="group flex min-w-0 items-center gap-2 rounded-lg border border-slate-200 bg-white p-2 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md sm:gap-2.5 sm:rounded-xl sm:p-3 md:gap-3 md:p-3.5 dark:border-slate-800"
                     >
                         <Image
                             src={skill.icon}
                             alt={`${skill.name} icon`}
                             width={36}
                             height={36}
-                            className="h-8 w-8 shrink-0 object-contain transition-transform duration-300 group-hover:scale-110 sm:h-9 sm:w-9"
+                            className="h-6 w-6 shrink-0 object-contain transition-transform duration-300 group-hover:scale-110 sm:h-7 sm:w-7 md:h-8 md:w-8"
                         />
 
-                        <span className="min-w-0 text-sm font-medium text-slate-800 sm:text-base dark:text-slate-200">
+                        <span className="min-w-0 text-xs font-mono font-bold sm:text-sm md:text-base dark:text-slate-700">
                             {skill.name}
                         </span>
                     </div>
                 ))}
 
             </div>
+
         </section>
     )
 }
