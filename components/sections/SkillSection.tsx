@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SkillSection() {
     return (
-        <section id="skills" className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-12 pb-16 text-slate-900 sm:px-10 sm:pt-16 sm:pb-20 md:px-16 md:pt-20 lg:px-24">
+        <section id="skills" className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-12 pb-8 sm:px-10 sm:pt-16 sm:pb-10 md:px-16 md:pt-20 lg:px-24">
             {/* Section Heading */}
             <div className="flex w-full max-w-5xl flex-col gap-2">
                 <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl">

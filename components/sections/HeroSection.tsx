@@ -21,7 +21,7 @@ export default function HeroSection({ name,
     }, []);
 
     return (
-        <section className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-16 pb-12 text-slate-900 sm:px-10 sm:pt-24 sm:pb-16 md:px-16 md:pt-28 lg:px-24 lg:pt-32">
+        <section className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-12 pb-8 sm:px-10 sm:pt-16 sm:pb-10 md:px-16 md:pt-20 lg:px-24">
             <div className="mx-auto flex w-fit max-w-full flex-col items-center justify-center gap-4 text-center md:flex-row md:items-center md:gap-5 md:text-left">
                 {/* A. Profile pic: width scales per breakpoint, height follows via aspect ratio */}
                 <div className="flex shrink-0 items-center justify-center">
