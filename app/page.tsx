@@ -6,7 +6,7 @@ import { FallingLeaves } from "falling-leaves/react";
 
 export default function Home() {
     return (
-        <main className="flex min-h-dvh flex-col gap-1 bg-dark">
+        <main className="flex min-h-dvh flex-col gap-1 bg-white">
             <FallingLeaves fullScreen />
             <HeroSection {...HeroSectionData} />
             <SkillSection />
