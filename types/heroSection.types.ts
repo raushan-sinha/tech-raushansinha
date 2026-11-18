@@ -1,7 +1,9 @@
+import { IconType } from "react-icons";
+
 export interface HeroSocialLink {
     label: string;
     href: string;
-    icon: string;
+    icon: IconType;
 }
 
 export interface HeroSectionProps {
