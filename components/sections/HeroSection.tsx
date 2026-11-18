@@ -39,7 +39,7 @@ export default function HeroSection({ name,
 
                 {/* B. Details */}
                 <div className="flex w-fit min-w-0 flex-col items-center justify-center gap-1.5 md:items-start">
-                    <h1 className="text-lg font-bold leading-tight tracking-tight sm:text-xl md:text-2xl">
+                    <h1 className="text-lg font-bold leading-tight tracking-tight sm:text-xl md:text-2xl text-black font-mono">
                         {name}
                     </h1>
 
@@ -52,10 +52,11 @@ export default function HeroSection({ name,
                         <span>@84Raushan</span>
                     </Link>
 
-                    <p className="text-sm font-bold leading-snug sm:text-base underline decoration-gray-300 decoration-2 underline-offset-4">
+                    <p className="text-sm font-bold leading-snug sm:text-base underline decoration-gray-300 decoration-2 underline-offset-4 text-black font-mono">
                         {title}
                     </p>
 
+                    {/* Social icons */}
                     <ul className="flex items-center justify-center gap-2.5 md:justify-start">
                         {socials.map((social) => (
                             <li key={social.label}>
