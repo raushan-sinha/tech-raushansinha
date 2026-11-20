@@ -3,6 +3,7 @@ import { HeroSectionProps } from "@/types/heroSection.types";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FiMoon } from "react-icons/fi";
 
 export default function HeroSection({ name,
     title,
@@ -34,6 +35,16 @@ export default function HeroSection({ name,
                             sizes="(min-width: 768px) 144px, (min-width: 640px) 128px, 112px"
                             className="object-cover"
                         />
+
+                        {/* Theme Toggle Button */}
+                        <button
+                            type="button"
+                            aria-label="Switch theme"
+                            title="Switch theme"
+                            className="absolute top-2 right-2 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-slate-800 shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 hover:bg-white dark:bg-white dark:text-black cursor-pointer"
+                        >
+                            <FiMoon className="h-3.5 w-3.5" />
+                        </button>
                     </div>
                 </div>
 
