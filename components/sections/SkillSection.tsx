@@ -6,7 +6,7 @@ export default function SkillSection() {
         <section id="skills" className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-12 pb-8 sm:px-10 sm:pt-16 sm:pb-10 md:px-16 md:pt-20 lg:px-24">
             {/* Section Heading */}
             <div className="flex w-full max-w-5xl flex-col gap-2">
-                <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl text-black underline decoration-gray-500 decoration-2 underline-offset-4">
+                <h2 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-3xl text-black underline decoration-gray-300 decoration-2 underline-offset-4">
                     Skills
                 </h2>
             </div>
