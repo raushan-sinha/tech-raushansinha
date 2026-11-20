@@ -25,7 +25,7 @@ export default function HeroSection({ name,
             <div className="mx-auto flex w-fit max-w-full flex-col items-center justify-center gap-4 text-center md:flex-row md:items-center md:gap-5 md:text-left">
                 {/* A. Profile pic: width scales per breakpoint, height follows via aspect ratio */}
                 <div className="flex shrink-0 items-center justify-center">
-                    <div className="relative aspect-square w-28 overflow-hidden rounded-3xl border-2 border-slate-200 bg-slate-200 ring-1 ring-slate-900/10 sm:w-32 md:w-38 md:h-40 dark:border-slate-700 dark:bg-slate-800 dark:ring-white/10">
+                    <div className="relative aspect-square w-28 overflow-hidden rounded-3xl bg-slate-200 ring-1 ring-slate-900/10 sm:w-32 md:w-38 md:h-40 dark:ring-white/10">
                         <Image
                             src={image}
                             alt={`${name} profile photo`}
