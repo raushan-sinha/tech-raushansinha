@@ -8,16 +8,9 @@ import { FiMoon, FiSun } from "react-icons/fi";
 export default function HeroSection({ name,
     title,
     country,
-    image, summary, socials }: HeroSectionProps) {
+    image, summary, socials, isDark, toggleTheme }: HeroSectionProps) {
 
     const [timeZone, setTimeZone] = useState<string>('');
-    const [isDark, setIsDark] = useState<boolean>(false);
-
-    // Toggle theme -
-    const toggleTheme = () => {
-        setIsDark(!isDark);
-        document.documentElement.classList.toggle('dark');
-    }
 
     // Local time -
     useEffect(() => {
@@ -29,7 +22,7 @@ export default function HeroSection({ name,
     }, []);
 
     return (
-        <section className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-12 pb-8 sm:px-10 sm:pt-16 sm:pb-10 md:px-16 md:pt-20 lg:px-24">
+        <section className="flex w-full flex-col items-center justify-center gap-8 px-6 pt-12 pb-8 sm:px-10 sm:pt-16 sm:pb-10 md:px-16 md:pt-20 lg:px-24 bg-white dark:bg-black text-slate-900 dark:text-white">
             <div className="mx-auto flex w-fit max-w-full flex-col items-center justify-center gap-4 text-center md:flex-row md:items-center md:gap-5 md:text-left">
                 {/* A. Profile pic: width scales per breakpoint, height follows via aspect ratio */}
                 <div className="flex shrink-0 items-center justify-center">
@@ -62,7 +55,7 @@ export default function HeroSection({ name,
 
                 {/* B. Details */}
                 <div className="flex w-fit min-w-0 flex-col items-center justify-center gap-1.5 md:items-start">
-                    <h1 className="text-lg font-bold leading-tight tracking-tight sm:text-xl md:text-2xl text-black font-mono">
+                    <h1 className="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight sm:text-xl md:text-2xl text-black font-mono">
                         {name}
                     </h1>
 
@@ -74,7 +67,7 @@ export default function HeroSection({ name,
                         <span className="rounded-full px-2.5 py-0.5 text-xs leading-5 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:text-sm dark:text-slate-600 font-mono">@84Raushan</span>
                     </Link>
 
-                    <p className="text-sm font-bold leading-snug sm:text-base underline decoration-gray-300 decoration-2 underline-offset-4 text-black font-mono">
+                    <p className="text-slate-900 dark:text-white text-sm font-bold leading-snug sm:text-base underline decoration-gray-300 decoration-2 underline-offset-4 text-black font-mono">
                         {title}
                     </p>
 
@@ -90,7 +83,7 @@ export default function HeroSection({ name,
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         aria-label={social.label}
-                                        className="inline-flex text-black transition-opacity hover:opacity-70"
+                                        className="inline-flex text-slate-900 dark:text-white transition-opacity hover:opacity-70"
                                     >
                                         <Icon className="h-5 w-5" aria-hidden="true" />
                                     </Link>
