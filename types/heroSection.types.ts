@@ -13,4 +13,6 @@ export interface HeroSectionProps {
     image: string, 
     summary: string;
     socials: HeroSocialLink[];
+    isDark: boolean,
+    toggleTheme: () => void
 }
