@@ -3,7 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin, FaFile } from "react-icons/fa6";
 
-export const HeroSectionData: HeroSectionProps = {
+export const HeroSectionData: Omit<HeroSectionProps, 'isDark' | 'toggleTheme'> = {
     name: "Raushan Kumar Sinha",
     title: "Frontend Developer",
     country: "India",
