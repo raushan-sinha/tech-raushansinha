@@ -1,5 +1,6 @@
 'use client'
 import HeroSection from "@/components/sections/HeroSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 import SkillSection from "@/components/sections/SkillSection";
 import { HeroSectionData } from "@/data/heroSection.data";
 import { FallingLeaves } from "falling-leaves/react";
@@ -29,6 +30,7 @@ export default function Home() {
             <FallingLeaves fullScreen />
             <HeroSection {...HeroSectionData} isDark={isDark} toggleTheme={toggleTheme} />
             <SkillSection />
+            <ProjectsSection />
         </main>
     );
 }
