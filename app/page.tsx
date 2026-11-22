@@ -3,13 +3,25 @@ import HeroSection from "@/components/sections/HeroSection";
 import SkillSection from "@/components/sections/SkillSection";
 import { HeroSectionData } from "@/data/heroSection.data";
 import { FallingLeaves } from "falling-leaves/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
     const [isDark, setIsDark] = useState<boolean>(false);
 
+    // Load saved theme
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark') {
+            setIsDark(true)
+        }
+    }, []);
+
     const toggleTheme = () => {
-        setIsDark((prev) => !prev);
+        const newTheme = !isDark;
+
+        setIsDark(newTheme);
+        localStorage.setItem("theme", newTheme ? "dark" : "light");
     }
 
     return (
