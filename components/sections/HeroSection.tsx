@@ -64,7 +64,7 @@ export default function HeroSection({ name,
                         target="_self"
                         rel="noopener noreferrer"
                     >
-                        <span className="rounded-full px-2.5 py-0.5 text-xs leading-5 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:text-sm dark:text-slate-600 font-mono">@84Raushan</span>
+                        <span className="rounded-full px-2.5 py-0.5 text-xs leading-5 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:text-sm dark:text-slate-400 font-mono">@84Raushan</span>
                     </Link>
 
                     <p className="text-slate-900 dark:text-white text-sm font-bold leading-snug sm:text-base underline decoration-gray-300 decoration-2 underline-offset-4 text-black font-mono">
@@ -92,7 +92,7 @@ export default function HeroSection({ name,
                         })}
                     </ul>
 
-                    <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-600 font-mono">
+                    <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-400 font-mono">
                         <li className="flex items-center gap-1.5">
                             <svg
                                 aria-hidden="true"
@@ -132,7 +132,7 @@ export default function HeroSection({ name,
 
             {/* Summary */}
             <div className="flex w-full max-w-2xl flex-col gap-2 text-start">
-                <p className="text-sm leading-relaxed text-slate-600 sm:text-base sm:leading-7 dark:text-slate-600 font-mono">
+                <p className="text-sm leading-relaxed text-slate-600 sm:text-base sm:leading-7 dark:text-slate-400 font-mono">
                     {summary}
                 </p>
             </div>
