@@ -3,12 +3,12 @@ import { ProjectProps } from "@/types/project.types";
 export const ProjectsData = [
     {
         id: 1,
-        name: "HireRadar",
+        name: "DevDigest",
         image:
-            "https://placehold.co/600x400/e0e7ff/3730a3?text=Project+1",
+            "/devdigest.png",
         imageAlt: "HireRadar website screenshot",
         description:
-            "Finds startups hiring for your profile every day and explains why each job is a match.",
+            "DevDigest is a modern developer-focused news platform that helps users stay updated with the latest trends in technology, AI, web development, startups, cybersecurity, cloud computing, and software engineering.",
         features: [
             "Resume-based skill detection",
             "Daily jobs from YC, job boards and funding news",
@@ -17,18 +17,18 @@ export const ProjectsData = [
         ],
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         links: {
-            live: "#",
-            code: "#",
+            live: "https://devdigest-pi.vercel.app/",
+            code: "https://github.com/raushan-sinha/devdigest",
         },
     },
     {
         id: 2,
-        name: "Project Name 2",
+        name: "DevForage",
         image:
-            "https://placehold.co/600x400/dcfce7/166534?text=Project+2",
-        imageAlt: "Project 2 website screenshot",
+            "/devforage.png",
+        imageAlt: "DevForage website screenshot",
         description:
-            "One-line summary of what this project does for the user.",
+            "This is Learning Management System website where Developers can find their Dev courses, Roadmaps and Create and Post their Projects & Components.",
         features: [
             "Key feature one",
             "Key feature two",
@@ -37,18 +37,18 @@ export const ProjectsData = [
         ],
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         links: {
-            live: "#",
-            code: "#",
+            live: "https://dev-forage.vercel.app/",
+            code: "https://github.com/raushan-sinha/dev-forage",
         },
     },
     {
         id: 3,
-        name: "Project Name 3",
+        name: "Jarurat Care",
         image:
-            "https://placehold.co/600x400/fef3c7/92400e?text=Project+3",
-        imageAlt: "Project 3 website screenshot",
+            "/jaruratcare.png",
+        imageAlt: "Jarurat Care website screenshot",
         description:
-            "One-line summary of what this project does for the user.",
+            "Jarurat Care is a Web application where stored the details of the Patient Records.",
         features: [
             "Key feature one",
             "Key feature two",
@@ -57,8 +57,8 @@ export const ProjectsData = [
         ],
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         links: {
-            live: "#",
-            code: "#",
+            live: "https://jarurat-care-one.vercel.app/",
+            code: "https://github.com/raushan-sinha/jarurat-care",
         },
     },
 ] satisfies ProjectProps[];
