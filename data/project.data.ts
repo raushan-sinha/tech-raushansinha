@@ -10,10 +10,10 @@ export const ProjectsData = [
         description:
             "DevDigest is a modern developer-focused news platform that helps users stay updated with the latest trends in technology, AI, web development, startups, cybersecurity, cloud computing, and software engineering.",
         features: [
-            "Resume-based skill detection",
-            "Daily jobs from YC, job boards and funding news",
-            "Match score with reasons",
-            "Application tracker",
+            "Latest technology and developer news",
+            "AI, web development and startup updates",
+            "Cybersecurity and cloud computing insights",
+            "Software engineering trends and resources",
         ],
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         links: {
@@ -30,10 +30,10 @@ export const ProjectsData = [
         description:
             "This is Learning Management System website where Developers can find their Dev courses, Roadmaps and Create and Post their Projects & Components.",
         features: [
-            "Key feature one",
-            "Key feature two",
-            "Key feature three",
-            "Key feature four",
+            "Developer-focused courses and learning resources",
+            "Structured programming and technology roadmaps",
+            "Create and publish developer projects",
+            "Share reusable components with the developer community",
         ],
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         links: {
@@ -50,10 +50,10 @@ export const ProjectsData = [
         description:
             "Jarurat Care is a Web application where stored the details of the Patient Records.",
         features: [
-            "Key feature one",
-            "Key feature two",
-            "Key feature three",
-            "Key feature four",
+            "Digital patient record management",
+            "Centralized patient information storage",
+            "Organized access to patient details",
+            "Efficient patient data management",
         ],
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         links: {
