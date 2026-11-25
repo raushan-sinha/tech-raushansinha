@@ -17,26 +17,26 @@ export default function ProjectsSection() {
                 {ProjectsData.map((project) => (
                     <div key={project.id} className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
                         <div className="flex flex-col gap-4 sm:flex-row">
-                            <div className="sm:w-44 sm:shrink-0">
+                            <div className="w-full shrink-0 overflow-hidden rounded-xl sm:w-44">
                                 <Image
                                     width={600}
                                     height={400}
                                     src={project.image}
                                     alt={project.imageAlt}
                                     unoptimized
-                                    className="h-28 w-full rounded-lg object-cover sm:h-full"
+                                    className="aspect-[3/2] h-auto w-full rounded-xl object-cover sm:aspect-auto sm:h-32 sm:w-full"
                                 />
                             </div>
 
                             <div className="flex min-w-0 flex-col">
                                 <div className="flex items-center gap-2">
-                                    <h3 className="text-base font-semibold text-slate-900 dark:text-white">{project.name}</h3>
-                                    <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">Learning</span>
+                                    <h3 className="text-base font-semibold text-slate-900 dark:text-white font-mono">{project.name}</h3>
+                                    <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">Completed</span>
                                 </div>
 
-                                <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">{project.description}</p>
+                                <p className="mt-1 text-xs text-slate-600 dark:text-slate-400 font-mono">{project.description}</p>
 
-                                <ul className="mt-2 list-disc space-y-0.5 pl-4 text-xs text-slate-600 dark:text-slate-400">
+                                <ul className="mt-2 list-disc space-y-0.5 pl-4 text-xs text-slate-600 dark:text-slate-400 font-mono">
                                     {project.features.map((feature) => (
                                         <li key={feature}>{feature}</li>
                                     ))}
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
 
                                 <div className="mt-2 flex flex-wrap gap-1.5">
                                     {project.technologies.map((tech) => (
-                                        <span key={tech} className="rounded bg-slate-100 px-2 py-0.5 text-xs text-slate-700 dark:bg-neutral-800 dark:text-slate-300">{tech}</span>
+                                        <span key={tech} className="rounded bg-slate-100 px-2 py-0.5 text-xs text-slate-700 dark:bg-neutral-800 dark:text-slate-300 font-mono">{tech}</span>
                                     ))}
                                 </div>
 
