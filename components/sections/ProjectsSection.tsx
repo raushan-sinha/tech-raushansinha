@@ -64,7 +64,8 @@ export default function ProjectsSection() {
             {/* Global Project Buttons */}
             <div className="flex w-full flex-wrap items-center gap-3 pt-2 sm:w-auto">
                 <a
-                    href="#project-list"
+                    href="https://vercel.com/raushan620300s-projects"
+                    target="_blank"
                     className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-indigo-700 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:flex-none"
                 >
                     View Projects
@@ -81,7 +82,7 @@ export default function ProjectsSection() {
                 </a>
 
                 <a
-                    href="YOUR_GITHUB_URL"
+                    href="https://github.com/raushan-sinha?tab=repositories"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-indigo-400 hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:bg-indigo-950/40 dark:hover:text-indigo-300 sm:flex-none"
