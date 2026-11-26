@@ -1,7 +1,5 @@
 'use client'
-import HeroSection from "@/components/sections/HeroSection";
-import ProjectsSection from "@/components/sections/ProjectsSection";
-import SkillSection from "@/components/sections/SkillSection";
+import { HeroSection, ProjectsSection, SkillSection } from "@/components/sections";
 import { HeroSectionData } from "@/data/heroSection.data";
 import { FallingLeaves } from "falling-leaves/react";
 import { useEffect, useState } from "react";
