@@ -110,7 +110,7 @@ export default function Contact() {
             {/* Footer */}
             <div className="mt-16 w-full max-w-3xl border-t border-slate-200 pt-6 text-center dark:border-neutral-800">
                 <p className="text-xs text-slate-500 dark:text-slate-500">
-                    © {new Date().getFullYear()} All rights reserved.
+                    © 2026 All rights reserved.
                 </p>
             </div>
         </section>
