@@ -1,5 +1,5 @@
 'use client'
-import { HeroSection, ProjectsSection, SkillSection } from "@/components/sections";
+import { Contact, HeroSection, ProjectsSection, SkillSection } from "@/components/sections";
 import { HeroSectionData } from "@/data/heroSection.data";
 import { FallingLeaves } from "falling-leaves/react";
 import { useEffect, useState } from "react";
@@ -29,6 +29,7 @@ export default function Home() {
             <HeroSection {...HeroSectionData} isDark={isDark} toggleTheme={toggleTheme} />
             <SkillSection />
             <ProjectsSection />
+            <Contact />
         </main>
     );
 }
