@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <main className={`flex min-h-dvh flex-col gap-1 ${isDark ? 'dark' : ''} bg-background text-foreground transition-colors duration-300`}>
             {/* <FallingLeaves fullScreen /> */}
-            <Snowfall flake="soft" count={80} />
+            <Snowfall fullScreen flake="soft" />
             <HeroSection {...HeroSectionData} isDark={isDark} toggleTheme={toggleTheme} />
             <SkillSection />
             <ProjectsSection />
