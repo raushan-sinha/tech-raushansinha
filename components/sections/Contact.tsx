@@ -8,7 +8,7 @@ import {
 
 const socialLinks = [
     {
-        name: "Twitter / X",
+        name: "X",
         icon: FaXTwitter,
         href: "https://x.com/84Raushan",
         color: "hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black",
@@ -56,43 +56,22 @@ export default function Contact() {
                 {/* Social Links */}
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
 
-                    <a
-                        href="https://x.com/YOUR_USERNAME"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-slate-400 hover:bg-black hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-white dark:hover:text-black font-mono"
-                    >
-                        <FaXTwitter className="text-base" />
-                        Twitter
-                    </a>
+                    {socialLinks.map((link, id) => {
+                        const Icon = link.icon;
 
-                    <a
-                        href="https://instagram.com/YOUR_USERNAME"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-pink-300 hover:bg-pink-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-pink-600 dark:hover:text-white font-mono"
-                    >
-                        <FaInstagram className="text-base" />
-                        Instagram
-                    </a>
-
-                    <a
-                        href="https://linkedin.com/in/YOUR_USERNAME"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-blue-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-blue-600 dark:hover:text-white font-mono"
-                    >
-                        <FaLinkedinIn className="text-base" />
-                        LinkedIn
-                    </a>
-
-                    <a
-                        href="mailto:YOUR_EMAIL@gmail.com"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-indigo-300 hover:bg-indigo-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-indigo-600 dark:hover:text-white font-mono"
-                    >
-                        <FaEnvelope className="text-base" />
-                        Email
-                    </a>
+                        return (
+                            <a
+                                key={id}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-slate-400 ${link.color} dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-white dark:hover:text-black font-mono`}
+                            >
+                                <Icon className="text-base" />
+                                {link.name}
+                            </a>
+                        )
+                    })}
 
                 </div>
 
