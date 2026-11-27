@@ -2,6 +2,7 @@
 import { Contact, HeroSection, ProjectsSection, SkillSection } from "@/components/sections";
 import { HeroSectionData } from "@/data/heroSection.data";
 import { FallingLeaves } from "falling-leaves/react";
+import { Snowfall } from "falling-snow/react";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
     return (
         <main className={`flex min-h-dvh flex-col gap-1 ${isDark ? 'dark' : ''} bg-background text-foreground transition-colors duration-300`}>
             <FallingLeaves fullScreen />
+            <Snowfall fullScreen />
             <HeroSection {...HeroSectionData} isDark={isDark} toggleTheme={toggleTheme} />
             <SkillSection />
             <ProjectsSection />
