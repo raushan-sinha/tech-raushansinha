@@ -75,15 +75,6 @@ export default function Contact() {
 
                 </div>
 
-                {/* Email CTA */}
-                <a
-                    href="mailto:YOUR_EMAIL@gmail.com"
-                    className="mt-8 inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-7 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:bg-indigo-700 hover:shadow-md"
-                >
-                    Let's Talk
-                    <FaEnvelope className="text-sm" />
-                </a>
-
             </div>
 
             {/* Footer */}
