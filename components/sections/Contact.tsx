@@ -10,25 +10,25 @@ const socialLinks = [
     {
         name: "Twitter / X",
         icon: FaXTwitter,
-        href: "https://x.com/YOUR_USERNAME",
+        href: "https://x.com/84Raushan",
         color: "hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black",
     },
     {
         name: "Instagram",
         icon: FaInstagram,
-        href: "https://instagram.com/YOUR_USERNAME",
+        href: "https://www.instagram.com/rohanthropic_/?hl=en",
         color: "hover:bg-pink-600 hover:text-white",
     },
     {
         name: "LinkedIn",
         icon: FaLinkedinIn,
-        href: "https://linkedin.com/in/YOUR_USERNAME",
+        href: "https://www.linkedin.com/in/raushan-sinha-4b94452a1/",
         color: "hover:bg-blue-600 hover:text-white",
     },
     {
         name: "Email",
         icon: FaEnvelope,
-        href: "mailto:YOUR_EMAIL@gmail.com",
+        href: "mailto:raushankrsinha2004@gmail.com",
         color: "hover:bg-indigo-600 hover:text-white",
     },
 ];
@@ -60,7 +60,7 @@ export default function Contact() {
                         href="https://x.com/YOUR_USERNAME"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-slate-400 hover:bg-black hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-white dark:hover:text-black"
+                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-slate-400 hover:bg-black hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-white dark:hover:text-black font-mono"
                     >
                         <FaXTwitter className="text-base" />
                         Twitter
@@ -70,7 +70,7 @@ export default function Contact() {
                         href="https://instagram.com/YOUR_USERNAME"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-pink-300 hover:bg-pink-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-pink-600 dark:hover:text-white"
+                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-pink-300 hover:bg-pink-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-pink-600 dark:hover:text-white font-mono"
                     >
                         <FaInstagram className="text-base" />
                         Instagram
@@ -80,7 +80,7 @@ export default function Contact() {
                         href="https://linkedin.com/in/YOUR_USERNAME"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-blue-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-blue-600 dark:hover:text-white"
+                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-blue-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-blue-600 dark:hover:text-white font-mono"
                     >
                         <FaLinkedinIn className="text-base" />
                         LinkedIn
@@ -88,7 +88,7 @@ export default function Contact() {
 
                     <a
                         href="mailto:YOUR_EMAIL@gmail.com"
-                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-indigo-300 hover:bg-indigo-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-indigo-600 dark:hover:text-white"
+                        className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-200 hover:-translate-y-1 hover:border-indigo-300 hover:bg-indigo-600 hover:text-white dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300 dark:hover:bg-indigo-600 dark:hover:text-white font-mono"
                     >
                         <FaEnvelope className="text-base" />
                         Email
